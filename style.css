@@ -1,15 +1,16 @@
 @font-face {
     font-family: "attila";
-    src: url("./fonts/attila.ttf");
+    src: url("./fonts/attila.woff2");
 }
 @font-face {
     font-family: "fruity";
-    src: url(./fonts/Montserrat-Medium.ttf);
+    src: url(./fonts/Montserrat-Medium.woff2)
 }
 @font-face {
     font-family: "dancing";
-    src: url(./fonts/DancingScript-VariableFont_wght.ttf);
+    src: url(./fonts/DancingScript-VariableFont_wght.woff2);
 }
+
 
 * {
     margin: 0;
