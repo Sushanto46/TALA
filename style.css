@@ -815,11 +815,11 @@ body {
     }
     #pg8-imgBox img:nth-child(1){
         filter: drop-shadow(0px -1px 5px black);
-        height: 15vh;
+        height: 4rem;
     }
     #pg8-imgBox img:nth-child(2){
         filter: drop-shadow(0px -1px 5px black);
-        height: 22vh;
+        height: 7rem;
         position: relative;
         bottom: 8px;
         /* left: 5px; */
@@ -827,19 +827,19 @@ body {
     #pg8-imgBox img:nth-child(3){
         z-index: 99;
         filter: drop-shadow(0px -1px 5px black);
-        height: 28vh;
+        height: 9rem;
         position: relative;
         bottom: 13px;
     }
     #pg8-imgBox img:nth-child(4){
-        height: 22vh;
+        height: 7rem;
         position: relative;
         filter: drop-shadow(0px -1px 5px black);
         bottom: 8px;
         /* right: 5px; */
     }
     #pg8-imgBox img:nth-child(5){
-        height: 15vh;
+        height: 4rem;
         filter: drop-shadow(0px -1px 5px black);
     }
 }
