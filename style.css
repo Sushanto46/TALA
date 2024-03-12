@@ -397,6 +397,7 @@ body {
     margin-bottom: 9vw;
 }
 .slide-h2{
+    white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
     cursor: default;
@@ -408,16 +409,19 @@ body {
     display: none;
 }
 .slide-h1{
+    white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
     cursor: default;
 }
+.slide-h1 h1{
+    transform: translateX(-20%);
+}
 .slide-h2 h1{
-    transform: translateX(-10%);
+    transform: translateX(0%);
 }
 #page6 h1{
     cursor: default;
-    min-width: 300vw;
     text-transform: uppercase;
     font-size: 10vw;
     line-height: 18vh;
