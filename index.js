@@ -72,7 +72,7 @@ TweenMax.to("#smiley img", {
 let slide1h1 = document.querySelectorAll("#page6 .slide-h1 h1");
 slide1h1.forEach(function (ele) {
     gsap.to(ele, {
-        transform: "translateX(-10%)",
+        transform: "translateX(0%)",
         duration: 10,
         scrollTrigger: {
             trigger: "#page6",
@@ -80,13 +80,14 @@ slide1h1.forEach(function (ele) {
             scrub: 2,
             // markers: true,
             start: "top 40%",
+            end: "bottom 70%"
         },
     });
 });
 let slide2h1 = document.querySelectorAll("#page6 .slide-h2 h1");
 slide2h1.forEach(function (ele) {
     gsap.to(ele, {
-        transform: "translateX(10%)",
+        transform: "translateX(-30%)",
         duration: 5,
         scrollTrigger: {
             trigger: "#page6",
@@ -94,6 +95,7 @@ slide2h1.forEach(function (ele) {
             scrub: 2,
             // markers: true,
             start: "top 40%",
+            end: "bottom 70%"
         },
     });
 });
