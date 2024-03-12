@@ -100,12 +100,13 @@ slide2h1.forEach(function (ele) {
 gsap.from(".pg4-prim", {
     opacity: 0,
     x: -100,
-    duration: 0.1,
+    stagger: 1,
     scrollTrigger: {
-        trigger: ".pg4-prim",
+        trigger: "#page4",
         scroller: "body",
-        // markers: true,
+        markers: true,
         start: "top 80%",
+        end: "center 90%",
         scrub: 3,
     },
 });
