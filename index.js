@@ -104,7 +104,7 @@ gsap.from(".pg4-prim", {
     scrollTrigger: {
         trigger: "#page4",
         scroller: "body",
-        markers: true,
+       // markers: true,
         start: "top 80%",
         end: "center 90%",
         scrub: 3,
