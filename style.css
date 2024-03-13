@@ -358,7 +358,18 @@ body {
     background: url("https://uploads-ssl.webflow.com/61defec4a021d8fe954c11bd/61defec4a021d83ede4c11f8_stars.gif") center center/cover;
     height:85vh;
 }
-
+#page5 #cursor{
+    transition: scale ease-in-out 0.6s;
+    background-color: rgb(152, 0, 253);
+    width: 2vw;
+    height: 2vw;
+    position: fixed;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 1;
+    pointer-events: none;
+    mix-blend-mode:difference;
+}
 #page5-ele1 {
     width: 63%;
     position: relative;
