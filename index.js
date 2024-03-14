@@ -2,9 +2,29 @@ let menuToggle = document.querySelector("#toggle");
 let flag = 1;
 menuToggle.addEventListener("click", () => {
     if (flag === 1) {
+        gsap.from('#menu-left h3', {
+            y : -40,
+            stagger: 0.3
+        })
+        gsap.from('#menu-right h3', {
+            y : -40,
+            stagger: 0.3
+        })
+        gsap.fromTo('#menu-full-srn h1', 
+        {
+            y : -90,
+            opacity:0
+        },
+        {
+            y:0,
+            opacity: 1,
+            ease: "elastic",
+            duration: 4
+
+        })
         document.querySelector("#nav").style.color = "#2b2424";
         menuToggle.classList.add("active");
-        document.querySelector("#menu-full-srn").style.top = "0";
+        document.querySelector("#menu-full-srn").style.transform = "translateY(0%)";
         console.log(document.querySelector("#toggle span"));
         document.querySelectorAll("#toggle span").forEach((ele) => {
             ele.style.backgroundColor = "#2b2424";
@@ -13,7 +33,7 @@ menuToggle.addEventListener("click", () => {
     } else {
         document.querySelector("#nav").style.color = "#dadada";
         menuToggle.classList.remove("active");
-        document.querySelector("#menu-full-srn").style.top = "-100%";
+       document.querySelector("#menu-full-srn").style.transform = "translateY(-100%)";
         document.querySelectorAll("#toggle span").forEach((ele) => {
             ele.style.backgroundColor = "#dadada";
         });
