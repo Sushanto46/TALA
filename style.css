@@ -106,8 +106,9 @@ body {
     height: 100%;
     width: 100%;
     background-color: rgb(217, 236, 135);
-    top: -100%;
+    top: 0%;
     left: 0;
+    transform: translateY(-100%);
     color: #2b2424;
     transition: 1s;
     z-index: 99999;
@@ -117,6 +118,7 @@ body {
     position: absolute;
     font-size: 15vw;
     top: 4vw;
+    opacity: 0;
     left: 5vw;
 }
 
