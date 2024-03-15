@@ -22,25 +22,42 @@ menuToggle.addEventListener("click", () => {
             duration: 4
 
         })
+        document.querySelector(".cart-menu").style.transform = "translateY(-100%)";
         document.querySelector("#nav").style.color = "#2b2424";
         menuToggle.classList.add("active");
         document.querySelector("#menu-full-srn").style.transform = "translateY(0%)";
-        console.log(document.querySelector("#toggle span"));
         document.querySelectorAll("#toggle span").forEach((ele) => {
             ele.style.backgroundColor = "#2b2424";
         });
-        flag = 0;
+        flagCart = 1; flag = 0;
     } else {
         document.querySelector("#nav").style.color = "#dadada";
         menuToggle.classList.remove("active");
-       document.querySelector("#menu-full-srn").style.transform = "translateY(-100%)";
+        document.querySelector("#menu-full-srn").style.transform = "translateY(-100%)";
         document.querySelectorAll("#toggle span").forEach((ele) => {
             ele.style.backgroundColor = "#dadada";
         });
         flag = 1;
     }
 });
-
+let cartToggle = document.querySelector("#nav-part2 h3");
+let flagCart = 1;
+cartToggle.addEventListener("click", () => {
+    if (flagCart === 1) {
+        document.querySelectorAll("#toggle span").forEach((ele) => {
+            ele.style.backgroundColor = "#dadada";
+        });
+        document.querySelector("#menu-full-srn").style.transform = "translateY(-100%)";
+        menuToggle.classList.remove("active");
+        document.querySelector("#nav").style.color = "#dadada";
+        document.querySelector(".cart-menu").style.transform = "translateY(0%)";
+        flagCart = 0; flag = 1;
+    } else {
+        document.querySelector("#nav").style.color = "#dadada";
+        document.querySelector(".cart-menu").style.transform = "translateY(-100%)";
+        flagCart = 1;
+    }
+});
 let t1 = gsap.timeline();
 t1.from("#page1 h1", {
     opacity: 0,
