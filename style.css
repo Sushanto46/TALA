@@ -64,6 +64,77 @@ body {
     overflow: hidden;
 }
 
+
+#cartPrim{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#cartBtn{
+    margin-top: 1vw;
+    padding: 1vw;
+    width: 15vw;
+    border-radius: 20px;
+    font-size: 1.2vw;
+    font-family: 'attila';
+    cursor: pointer;
+}
+#cartBtn:hover{
+    background-color:rgb(217, 236, 135); 
+}
+#nav-part2 h3{
+    user-select: none;
+    cursor: pointer;
+}
+#nav-part2 h3:hover{
+    color: rgb(217, 236, 135); 
+}
+.cart-menu{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(41, 2, 49);
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    color: #ffffff;
+    transition: 1s;
+    z-index: 99999;
+}
+.empty-slider-box,
+.cart-slider-box{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    word-spacing: 4vw;
+    font-size: 6vw;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.empty-slider,
+.cart-slider{
+    display: inline-block;
+    animation: 10s slide infinite linear ;
+}
+.empty-slider-box:hover .empty-slider{
+    animation-play-state: paused;
+    color: rgb(217, 236, 135); 
+}
+.cart-slider-box:hover .cart-slider{
+    color: rgb(217, 236, 135); 
+    animation-play-state: paused;
+}
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%)
+    }
+}
+
+
 #toggle span {
     position: absolute;
     height: 4px;
