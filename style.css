@@ -930,4 +930,25 @@ body {
         height: 4rem;
         filter: drop-shadow(0px -1px 5px black);
     }
+     #cartBtn{
+        margin-top: 6vw;
+        padding: 1vw;
+        width: 40vw;
+        height: 10vw;
+        border-radius: 20px;
+        font-size: 4vw;
+        font-family: 'attila';
+        cursor: pointer;
+    }
+    .empty-slider-box,
+.cart-slider-box{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    word-spacing: 4vw;
+    line-height: 11vw;
+    font-size: 10vw;
+    white-space: nowrap;
+    overflow: hidden;
+    user-select: none;
+}
 }
